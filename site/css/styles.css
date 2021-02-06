@@ -240,21 +240,24 @@ nav {
   text-align: center;
 }
 
-#our-vision {
+#our-vision, #about-us {
   text-align: center;
   display: flex;
   justify-content: center;
-  background-image: url('../images/logo2.png');
+  /*background-image: url('../images/logo2.png');*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  padding: 10% 5%;
   /*color: rgba(0,0,0,0.7);*/
 }
-#our-vision-div {
+#our-vision-div, #about-us div {
   font-size: 1.5em;
 }
+#about-us {
 
+}
 #footer {
   margin: 0;
   padding: 5% 10% 5% 10%;
@@ -272,8 +275,8 @@ nav {
   outline: none;
   color: #FFDB58;
   background-color: #1C2331;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   cursor: pointer;
   padding: 0;
   margin: 0;
@@ -393,4 +396,29 @@ nav {
 
 #social-footer {
   text-align: center;
+}
+
+#whatsapp {
+
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #FFDB58;
+  background-color: transparent;
+  height: 96px;
+  width: 96px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+}
+
+#whatsapp:hover {
+  color: #1C2331;
+  transition: transform 0.4s ease-out;
+  transform: rotateZ(360deg);
 }
