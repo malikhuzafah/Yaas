@@ -1,3 +1,5 @@
+
+window.onscroll = function() {scrollFunction()};
 $(window).on("scroll", function() {
       if($(window).scrollTop() > 100) {
             var x = document.getElementsByClassName('nav-link-span');
@@ -20,3 +22,16 @@ $(window).on("scroll", function() {
 //       alert("Hello");
 // }
 
+function scrollFunction() {
+      var mybutton = document.getElementById('myBtn');
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
