@@ -366,6 +366,11 @@ nav {
  .social-networks .icon-instagram:hover:before, .social-networks .icon-instagram:focus:before {
    background: #3f729b;
 }
+ .social-networks .icon-linkedin:after {
+   content: "\eac9";
+}
+ .social-networks .icon-linkedin:hover:before, .social-networks .icon-linkedin:focus:before {
+   background: #0077b5;
 }
  @keyframes bounce {
    0%, 20%, 53%, 80%, 100% {
@@ -383,4 +388,9 @@ nav {
    90% {
      transform: translate3d(0, -2px, 0);
   }
+}
+
+
+#social-footer {
+  text-align: center;
 }
