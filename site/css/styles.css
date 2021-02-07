@@ -491,8 +491,8 @@ nav {
 }
 
   #myBtn, #myBtn svg {
-    height: 48px;
-    width: 48px;
+    height: 60px;
+    width: 60px;
   }
 }
 
@@ -536,8 +536,8 @@ nav {
   background-image: url('../images/whatsapp-small.png');
 }
   #myBtn, #myBtn svg {
-    height: 48px;
-    width: 48px;
+    height: 60px;
+    width: 60px;
   }
 }
 
