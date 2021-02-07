@@ -19,8 +19,14 @@
 	<title>Yaas Group of Engineers</title>
 </head>
 
-<body>
+<body onload="todayDate();">
 	
+	<div >
+		<a href="https://wa.me/923066882888" target="_blank" id="whatsapp">
+			<div class="overlay-image" id="whatsapp-icon"></div>
+		</a>
+	</div>
+
 	<button onclick="topFunction()" id="myBtn" title="Go to top">
 		<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
 			<path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
@@ -140,10 +146,10 @@
 				<p>We are hitting the market ground with a mission to make that future a reality, today. And we are focused on taking the necessary steps to get there. We believe in a future where clean energy is accessible to everyone, everywhere. Get affordable pricing adn contribute to a cleaner environment with us!</p>
 			</div>
 		</div>
-		<div class="main-content" style="background-image: url('images/10.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;">
+		<div class="main-content" style="background-image: linear-gradient(to left,rgba(0,0,0,0.1),rgba(0,0,0,0.9)), url('images/10.jpg');background-repeat: no-repeat;background-position: center;background-size: cover; background-attachment: fixed;">
 			<div class="carousel-text">
-				<h1>Residential</h1>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+				<h1 style="color: white;">Residential</h1>
+				<p style="color: white;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
 				<a href="">
 					<button class="btn btn-lg" ><strong>Learn More</strong></button>
 				</a>
@@ -158,10 +164,10 @@
 			</a> -->
 			</div>
 		</div>
-		<div class="main-content" style="background-image: url('images/11.jpg');">
+		<div class="main-content" style="background-image: linear-gradient(to left,rgba(0,0,0,0.1),rgba(0,0,0,0.9)), url('images/11.jpg'); background-attachment: fixed;">
 			<div>
-				<h1>Residential</h1>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+				<h1 style="color: white;">Residential</h1>
+				<p style="color: white;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
 				<a href="">
 					<button class="btn btn-lg">Learn More</button>
 				</a>
@@ -198,10 +204,10 @@
 			</div>
 		</div>
 
-		<div class="main-content" style="background-image: url('images/13.jpg');">
+		<div class="main-content" style="background-image: linear-gradient(to left,rgba(0,0,1,0.1),rgba(0,0,0,0.9)), url('images/13.jpg'); background-attachment: fixed;">
 			<div>
-				<h1>Residential</h1>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+				<h1 style="color: white;">Residential</h1>
+				<p style="color: white;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
 				<a href="">
 					<button class="btn btn-lg">Learn More</button>
 				</a>
@@ -293,17 +299,18 @@
 
 	<footer>
 		<div class="row" id="footer">
-			<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 				<div align="center">
+					<br>
 					<hr>
 					<h2>Address</h2>
 					<p>D1-17M-MALIK Plaza, Civic Center, Model Town, Lahore.</p>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13610.175821447743!2d74.311475!3d31.481729!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48759dd4fccee1f0!2sMalik%20Plaza%2017%20M!5e0!3m2!1sen!2s!4v1612638889585!5m2!1sen!2s"  height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" style="width: 100%;"></iframe>
+					<iframe  class="row" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13610.175821447743!2d74.311475!3d31.481729!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48759dd4fccee1f0!2sMalik%20Plaza%2017%20M!5e0!3m2!1sen!2s!4v1612638889585!5m2!1sen!2s" width="200" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 				</div>
 				
 			</div>
 		
-		<div class="col-md-4 col-sm-6 col-xs-12">
+		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 			<div align="center">
 				<h1 style="text-align: center;">YAAS Group</h1>
 				<ul class="social-networks spin-icon">
@@ -311,28 +318,28 @@
 					<li><a href="https://www.instagram.com/yaas.goe/" class="icon-instagram" target="_blank">Instagram</a></li>
 					<li><a href="https://www.linkedin.com/" class="icon-linkedin">LinkedIn</a></li>
 				</ul>
+				<p>Follow us</p>
+				<div class="vl d-none d-lg-block d-xl-block"></div>
 			</div>
 		</div>
-		<div class="col-md-4 col-sm-12 col-xs-12">
+		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 			<div align="center">
+				<br>
 				<hr>
 				<h2>Call</h2>
 				<a href="tel:+923000361029"><sapn>+9230007121525</span></a>
 				
 				<h2>Email</h2>
 				<a href="mailto:info@yaasgroup.com.pk" target="_blank"><span>info@yaasgroup.com.pk</span></a>
-				
 			</div>
-				
 		</div>
 		<div class="col-12">
 
 		</div>
 		</div>
 	</footer>
-	<div >
-		<a href="https://wa.me/923066882888" target="_blank" id="whatsapp"><img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png"/></a>
-	</div>
+	<footer style="background-color: black; text-align: center; color: white;">&copy; <em id="date"></em>malik_huzafah</footer>
+
 </body>
 </html>
 
