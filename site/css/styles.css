@@ -3,7 +3,7 @@
 body {
   font-size: 1.2em;
   color: black;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Cambria', sans-sarif;
   margin: 0;
   padding: 0;
 }
@@ -72,6 +72,7 @@ nav {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100vh;
+  position: relative;
 }
 .carousel-button {
   border-radius: 40px;
@@ -87,10 +88,11 @@ nav {
 }
 .carousel-container {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding-bottom: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 10%;
+  overflow: visible;
 }
 .overlay-image {
   position: absolute;
@@ -153,7 +155,7 @@ nav {
   width: 35%;
   vertical-align: center;*/
   position: absolute;
-  left: 5%;
+  left: 10%;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -254,10 +256,10 @@ nav {
 
 #how-it-works {
   padding: 5% 10% 5% 10%;
+  margin: 0;
 }
 #ht-1, #ht-2, #ht-3, #ht-4{
-  margin-top: 20px; 
-  height: 250px;
+  margin-top: 20px;
   width: 100%;
   margin-bottom: 15px;
   position: relative;
@@ -271,11 +273,11 @@ nav {
   /*display: flex;*/
   /*justify-content: center;*/
   /*background-image: url('../images/logo2.png');*/
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 10% 5%;
+  /*background-repeat: no-repeat;*/
+  /*background-position: center;*/
+  /*background-size: cover;*/
+  /*background-attachment: fixed;*/
+  padding: 5% 10%;
   /*color: rgba(0,0,0,0.7);*/
   /*background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.1));*/
 }
@@ -453,8 +455,30 @@ nav {
   background-image: url('../images/whatsapp-large.png');
 }
 
+#how-it-works hr {
+  margin: 0
+  padding: 0;
+}
+hr {
+  border: 1px solid black;
+  color: black;
+  border-radius: 1px;
+}
 
 
+
+.vl {
+  border-left: 2px solid black;
+  height: 100px;
+  border-radius: 2px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+}
+
+
+
+/**********        Media       **********/
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 
@@ -468,12 +492,15 @@ nav {
 /*Small devices*/
 @media (min-width: 768px) and (max-width: 991px) {
   body {
-    font-size: 0.5em;
+    font-size: 0.9em;
   }
-  .nav-link span {
+  h1 {
+    font-size: 1.5em;
+  }
+ /* .nav-link span {
     color: #FFDB58;
-    font-size: 0.6em;
-  }
+    font-size: 1em;
+  }*/
   #navbarDropdown {
     color: #FFDB58;
   }
@@ -483,76 +510,83 @@ nav {
   }*/
 
   #whatsapp-icon {
-  background-image: url('https://img.icons8.com/color/96/000000/whatsapp--v1.png');
-}
-#whatsapp {
-  height: 48px;
-  width: 48px;
-}
+    background-image: url('../images/whatsapp-sm.png');
+  }
+  #whatsapp {
+    height: 60px;
+    width: 60px;
+  }
 
   #myBtn, #myBtn svg {
     height: 60px;
     width: 60px;
+  }
+
+  .main-content {
+    height: 65vh;
   }
 }
 
 /*extra small devices*/
 @media (max-width: 767px) {
+  body {
+    font-size: 0.7em;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
    #logo-img {
     background-image: url('../images/logo-03.png');
     width: 120px;
     height: 68px;
   }
-  #our-vision-div, #about-us {
+ /* #our-vision-div, #about-us {
     font-size: 0.7em;
   }
-
+*/
   #whatsapp-icon {
-  background-image: url('../images/whatsapp-small.png');
-}
-#whatsapp {
-  height: 48px;
-  width: 48px;
-}
+    background-image: url('../images/whatsapp-sm.png');
+  }
+  #whatsapp {
+    height: 60px;
+    width: 60px;
+  }
   #myBtn, #myBtn svg {
     height: 60px;
     width: 60px;
+  }
+  .main-content {
+    height: 65vh;
   }
 }
 
 
 /*super extra small devices*/
 @media (max-width: 479px) {
+  body {
+    font-size: 0.5em;
+  }
    #logo-img {
     background-image: url('../images/logo-03.png');
     width: 120px;
     height: 68px;
   }
-  #our-vision-div, #about-us {
+ /* #our-vision-div, #about-us {
     font-size: 0.7em;
-  }
+  }*/
 
   #whatsapp-icon {
-  background-image: url('../images/whatsapp-small.png');
-}
+    background-image: url('../images/whatsapp-sm.png');
+  }
+  #whatsapp {
+    height: 60px;
+    width: 60px;
+  }
   #myBtn, #myBtn svg {
     height: 60px;
     width: 60px;
   }
+  .main-content {
+    height: 65vh;
+  }
 }
-
-hr {
-  border: 1px solid black;
-  color: black;
-  border-radius: 1px;
-}
-
-.vl {
-  border-left: 2px solid black;
-  height: 100px;
-  border-radius: 2px;
-  position: absolute;
-  left: 50%;
-  margin-left: -3px;
-}
-
