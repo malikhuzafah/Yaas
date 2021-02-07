@@ -61,10 +61,10 @@ nav {
   background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0.5)), url('../images/15.jpg');
 }
 #slide-2 {
-  background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0.5)), url('../images/16.jpg');
+  background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0.5))/*linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))*/, url('../images/16.jpg');
 }
 #slide-3 {
-  background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0.5)), url('../images/17.jpg');
+  background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0.5))/*linear-gradient(to top, rgba(0,0,0,0.5),rgba(0,0,0,0.5))*/, url('../images/17.jpg');
 }
 .carousel-item {
   background-color: black;
@@ -93,6 +93,7 @@ nav {
   transform: translate(-50%, -50%);
   padding: 0 10%;
   overflow: visible;
+  font-size: 1.2em;
 }
 .overlay-image {
   position: absolute;
@@ -455,11 +456,7 @@ nav {
   background-image: url('../images/whatsapp-large.png');
 }
 
-#how-it-works hr {
-  margin: 0
-  padding: 0;
-}
-hr {
+#f1, #f2 {
   border: 1px solid black;
   color: black;
   border-radius: 1px;
