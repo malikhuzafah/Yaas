@@ -13,14 +13,17 @@ html {
 
 /** HEADER **/
 /*Navbar*/
+#navbar {
+  padding: 0 5%;
+}
 #logo-img {
   background: url('../images/logo-02.png') no-repeat;
   width: 160px;
   height: 90px;
-  margin: 0px 100px;
+  /*margin-left: 20%;*/
 }
 .navbar-nav {
-  margin-right: 50px;
+  /*margin-right: 50px;*/
   text-align: center;
 }
 .nav-link {
@@ -117,7 +120,7 @@ nav {
 .page-footer,.top-nav-collapse {
   background-color:#1C2331
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:991px) {
   .navbar{
     background-color:#1C2331;
   }
@@ -422,3 +425,38 @@ nav {
   transition: transform 0.4s ease-out;
   transform: rotateZ(360deg);
 }
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*Small devices*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-link span {
+    color: #FFDB58;
+    font-size: 0.6em;
+  }
+  #navbarDropdown {
+    color: #FFDB58;
+  }
+}
+
+/*extra small devices*/
+@media (max-width: 767px) {
+
+}
+
+
+/*super extra small devices*/
+@media (max-width: 479px) {
+
+}
+
