@@ -62,13 +62,15 @@ nav {
 
 /*Carousel*/
 #slide-1 {
-  background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0.5)), url('../images/15.jpg');
+  /*background-image: linear-gradient(to bottom, rgba(0, 0, 0,0.3),rgba(0, 0, 0,0.5)), url('../images/15.jpg');*/
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255,0.3), rgba(18, 84, 135,0.8)), url('../images/15.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #slide-2 {
-  background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0.5))/*linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))*/, url('../images/16.jpg');
+  /*background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0.5))/*linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/16.jpg');*/
+  background-image: /*linear-gradient(to top, rgba(18, 84, 135,0.3),rgba(18, 84, 135,0.5))*//*linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),*/ url('../images/16.jpg');
 }
 #slide-3 {
   background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0.5))/*linear-gradient(to top, rgba(0,0,0,0.5),rgba(0,0,0,0.5))*/, url('../images/17.jpg');
@@ -101,8 +103,10 @@ nav {
   padding: 0 10%;
   overflow: visible;
   font-size: 1.2em;
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5));
-  color: white;
+  /*background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5));*/
+  /*color: white;*/
+  /*color: #FFDB58;*/
+  color: black;
 }
 .overlay-image {
   position: absolute;
@@ -169,7 +173,7 @@ nav {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 35%;
+  width: 40%;
   vertical-align: center;
 
 }
@@ -536,6 +540,16 @@ footer {
 
   .main-content {
     height: 65vh;
+    
+  }
+  .main-content div {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   #copyright {
@@ -574,10 +588,22 @@ footer {
   .main-content {
     height: 65vh;
   }
+
+  .main-content div {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
    #copyright {
     font-size: 0.8em;
     margin-bottom: 60px;
   }
+
 }
 
 
@@ -609,4 +635,15 @@ footer {
   .main-content {
     height: 65vh;
   }
+
+  .main-content div {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
 }
