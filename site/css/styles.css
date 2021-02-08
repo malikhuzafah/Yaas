@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-weight: bolder;
+}
+
 /** HEADER **/
 /*Navbar*/
 #navbar {
@@ -47,7 +51,7 @@ nav {
   color: #125487;
 }
 .dropdown-toggle::after {
-  margin-left: -3%;
+  margin-left: 0;
   vertical-align: .1em;
   border-top: .2em solid;
   border-right: .2em solid transparent;
@@ -59,6 +63,9 @@ nav {
 /*Carousel*/
 #slide-1 {
   background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0.5)), url('../images/15.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #slide-2 {
   background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0.5))/*linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))*/, url('../images/16.jpg');
@@ -94,6 +101,8 @@ nav {
   padding: 0 10%;
   overflow: visible;
   font-size: 1.2em;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5));
+  color: white;
 }
 .overlay-image {
   position: absolute;
@@ -143,8 +152,8 @@ nav {
   padding: auto;
   margin: auto;
   position: relative;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
+/*  border-top: 5px solid black;
+  border-bottom: 5px solid black;*/
   background-attachment: fixed;
 }
 .main-content div{
@@ -270,6 +279,7 @@ nav {
 }
 
 #our-vision, #about-us {
+  /*background: linear-gradient(to top, rgba(213, 232, 37, 0.7), rgba(213, 232, 37,0.3));*/
   text-align: center;
   /*display: flex;*/
   /*justify-content: center;*/
@@ -278,19 +288,24 @@ nav {
   /*background-position: center;*/
   /*background-size: cover;*/
   /*background-attachment: fixed;*/
-  padding: 5% 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   /*color: rgba(0,0,0,0.7);*/
   /*background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.1));*/
 }
-#our-vision-div, #about-us div {
+#our-vision-div, #about-us-div {
+  text-align: center;
   font-size: 1.5em;
 }
 #about-us {
 
 }
-#footer {
+footer {
+  padding: 5% 0;
+}
+.footer {
   margin: 0;
-  padding: 5% 10% 5% 10%;
+  padding: 0% 10% 0% 10%;
   overflow: hidden;
 }
 
@@ -488,12 +503,12 @@ nav {
 
 /*Small devices*/
 @media (min-width: 768px) and (max-width: 991px) {
-  body {
+/*  body {
     font-size: 0.9em;
   }
   h1 {
     font-size: 1.5em;
-  }
+  }*/
  /* .nav-link span {
     color: #FFDB58;
     font-size: 1em;
@@ -502,9 +517,9 @@ nav {
     color: #FFDB58;
   }
 
-  /*#our-vision-div, #about-us {
-    font-size: 0.7em;
-  }*/
+  #about-us-div, #our-vision-div {
+    font-size: 1.1em;
+  }
 
   #whatsapp-icon {
     background-image: url('../images/whatsapp-sm.png');
@@ -521,26 +536,30 @@ nav {
 
   .main-content {
     height: 65vh;
+  }
+
+  #copyright {
+    font-size: 0.8em;
   }
 }
 
 /*extra small devices*/
 @media (max-width: 767px) {
-  body {
+/*  body {
     font-size: 0.7em;
   }
   h1 {
     font-size: 1.5em;
-  }
+  }*/
    #logo-img {
     background-image: url('../images/logo-03.png');
     width: 120px;
     height: 68px;
   }
- /* #our-vision-div, #about-us {
-    font-size: 0.7em;
+  #our-vision-div, #about-us-div {
+    font-size: 1em;
   }
-*/
+
   #whatsapp-icon {
     background-image: url('../images/whatsapp-sm.png');
   }
@@ -554,23 +573,27 @@ nav {
   }
   .main-content {
     height: 65vh;
+  }
+   #copyright {
+    font-size: 0.8em;
+    margin-bottom: 60px;
   }
 }
 
 
 /*super extra small devices*/
 @media (max-width: 479px) {
-  body {
+/*  body {
     font-size: 0.5em;
-  }
+  }*/
    #logo-img {
     background-image: url('../images/logo-03.png');
     width: 120px;
     height: 68px;
   }
- /* #our-vision-div, #about-us {
-    font-size: 0.7em;
-  }*/
+  #our-vision-div, #about-us-div {
+    font-size: 0.9em;
+  }
 
   #whatsapp-icon {
     background-image: url('../images/whatsapp-sm.png');
