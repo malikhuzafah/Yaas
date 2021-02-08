@@ -1,4 +1,3 @@
-
 window.onscroll = function() {scrollFunction()};
 $(window).on("scroll", function() {
       if (screen.width <= 992) {
@@ -31,7 +30,7 @@ $(window).on("scroll", function() {
 // }
 
 function scrollFunction() {
-      var mybutton = document.getElementById('myBtn');
+      var mybutton = document.getElementById('scroll-up-btn');
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {
