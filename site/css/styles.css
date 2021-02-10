@@ -40,6 +40,14 @@ h1 {
 }
 #whatsapp-icon {
   background-image: url('../images/whatsapp-large.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #scroll-up-btn {
@@ -242,13 +250,7 @@ nav {
 
 
 
-.project-tile {
-  width: 10px;
-  overflow: hidden;
-  margin: 10px;
-  padding: 10px;
 
-}
 #projects {
   padding: 5% 10% 5% 10%;
   background-repeat: no-repeat;
@@ -321,6 +323,7 @@ nav {
   text-align: center;
   font-size: 1.5em;
   color: #7c7c7c;
+  overflow: hidden;
 }
 footer {
   padding: 5% 0;
@@ -453,6 +456,9 @@ footer {
   left: 50%;
   margin-left: -3px;
 }
+.footer-heading {
+  color: #125487;
+}
 
 
 /*About us page*/
@@ -469,6 +475,55 @@ footer {
   overflow: visible;
   font-size: 1.2em;
   color: black;
+}
+
+#our-team {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: 0;
+}
+#team-1-tile {
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../images/team-abdullah.jpg');
+}
+#team-2-tile {
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../images/team-1.jpg');
+}
+#team-3-tile {
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../images/team-ahmad.jpg');
+}
+#team-4-tile {
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../images/team-yousaf.jpg');
+}
+#team-1-tile, #team-2-tile, #team-3-tile, #team-4-tile {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+}
+#team-1-tile:hover, #team-2-tile:hover, #team-3-tile:hover, #team-4-tile:hover {
+  /*box-shadow: 0 1px 5px 1px black;*/
+}
+
+#team-1-tile div, #team-2-tile div, #team-3-tile div, #team-4-tile div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  /*text-align: center;*/
+  /*font-size: 1.6em;*/
+  height: 150px;
+  text-transform: uppercase;
+  background-color: #000;
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+  color: #fff;
+  padding: 10px;
+  /*opacity: .8;*/
 }
 
 
