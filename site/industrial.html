@@ -8,12 +8,12 @@
 	<link rel="icon" href="images/logo-02.png">
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 
 	<title>Yaas Group of Engineers</title>
@@ -23,7 +23,7 @@
 	
 	<div >
 		<a href="https://wa.me/923066882888" target="_blank" id="whatsapp">
-			<div id="whatsapp-icon"></div>
+			<div class="overlay-image" id="whatsapp-icon"></div>
 		</a>
 	</div>
 
@@ -52,7 +52,7 @@
 					<ul class="navbar-nav ml-auto" id="navbar-buttons">
 
 						<li class="nav-item active">
-							<a class="nav-link" href="#" onclick="topFunction();"><span class="nav-link-span" id="nav-active-span">Home </span></a>
+							<a class="nav-link" href="#" onclick="topFunction();"><span class="nav-link-span">Home </span></a>
 						</li>
 
 						<li class="nav-item">
@@ -67,7 +67,7 @@
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="residential.html">Residential Projects</a>
 								<a class="dropdown-item" href="commercial.html">Commercial Projects</a>
-								<a class="dropdown-item" href="industrial.html">Industrial Projects</a>
+								<a class="dropdown-item" href="indutrial.html">Industrial Projects</a>
 								<a class="dropdown-item" href="agricultural.html">Agricultural Projects</a>
 							</div>
 						</li>
@@ -101,30 +101,30 @@
 
 			<div class="carousel-inner">
 				<div class="carousel-item active" id="home">
-					<div id="slide-1"></div>
-					<div class="carousel-container carousel-caption" align="center">
-						<h1><strong>Go solar, Protect the environment</strong></h1>
-						<p><strong>We are doing energy better for you and for the environment. Just the way to go for all who care for the planet!</strong></p>
-						<a href="contact.html"><button class="button1 carousel-button btn btn-lg"><strong>Get Quote</strong></button></a>
-					</div>
+					<div style="background-image: url('images/slide-1.jpg'); background-position: center;background-size: cover; background-repeat: no-repeat;width: 100%;height: 100vh;"></div>
+            <div class="carousel-caption container" align="center" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));margin-bottom: 100px;">
+							<h1><strong>Go solar, Protect the environment</strong></h1>
+							<p><strong>We are doing energy better for you and for the environment. Just the way to go for all who care for the planet!</strong></p>
+							<a href="contactUs.html"><button class="button2 button1 carousel-button btn btn-lg"> Get Quote</button></a>
+						</div>
 				</div>
 
 				<div class="carousel-item">
-					<div id="slide-2"></div>
-					<div class="carousel-container carousel-caption" align="center">
-						<h1><strong>YAAS Energy</strong></h1>
-						<p><strong>YAAS Group of Engineers providing the premier opportunity to let the sun spawn electricity for you with finest solutions at budget friendly prices</strong></p>
-						<a href="about.html"><button class="button1 btn btn-lg"><strong>About Us</strong></button></a>
-					</div>
+					<div style="background-image: url('images/slide-2.jpg'); background-position: center;background-size: cover;background-repeat: no-repeat;width: 100%;height: 100vh;"></div>
+            <div class="carousel-caption scontainer" align="center" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));margin-bottom: 100px;">
+							<h1><strong>Go solar, Protect the environment</strong></h1>
+							<p><strong>We are doing energy better for you and for the environment. Just the way to go for all who care for the planet!</strong></p>
+							<a href="contactUs.html"><button class="button2 button1 carousel-button btn btn-lg"> Get Quote</button></a>
+						</div>
 				</div>
 
 				<div class="carousel-item">
-					<div id="slide-3"></div>
-					<div class="carousel-container carousel-caption" align="center">
-						<h1><storng>Go solar, Protect the environment</storng></h1>
-						<p><strong>We are doing energy better for you and for the environment. Just the way to go for all who care for the planet!</strong></p>
-						<a href="contact.html"><button class="button1 btn btn-lg"><strong>Contact Us</strong></button></a>
-					</div>
+					<div style="background-image: url('images/slide-3.jpg'); background-position: center;background-size: cover;background-repeat: no-repeat;width: 100%;height: 100vh;"></div>
+            <div class="carousel-caption container" align="center" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));margin-bottom: 100px;">
+							<h1><strong>Go solar, Protect the environment</strong></h1>
+							<p><strong>We are doing energy better for you and for the environment. Just the way to go for all who care for the planet!</strong></p>
+							<a href="contactUs.html"><button class="button2 button1 carousel-button btn btn-lg"> Get Quote</button></a>
+						</div>
 				</div>
 			</div>
 
@@ -151,7 +151,7 @@
 		</div>
 
 		<div class="main-content" id="main-1">
-			<div>
+			<div class="carousel-text">
 				<h1>Residential</h1>
 				<p>As a homeowner you deserve the best that is why we employ and train only the best in the industry to ensure that you get a good return on your investment. When we install your solar electric system.</p>
 				<a href="residential.html">
@@ -189,35 +189,35 @@
 					<h1 align="center">How it works</h1>
 					<hr>
 			</div>
-			<div class="col-sm-3 col-xs-6">
+			<div class="col-3">
 				<div id="ht-1">
 					<img class="img-fluid" src="images/icon-1.png" width="170px" height="170px">
-					<p><strong style="color: black;">1. <br class="d-block d-sm-none"></strong>Speak to a solar consultant.</p>
+					<p><strong style="color: black;">1. </strong>Speak to a solar consultant.</p>
 				</div>
 			</div>
-			<div class="col-sm-3 col-xs-6">
+			<div class="col-3">
 				<div id="ht-2">
 					<img class="img-fluid" src="images/icon-2.png" width="170px" height="170px">
-					<p><strong style="color: black;">2. <br class="d-block d-sm-none"></strong>We'll design your solar panel system.</p>
+					<p><strong style="color: black;">2. </strong>We'll design your solar panel system.</p>
 				</div>
 			</div>
-			<div class="col-sm-3 col-xs-6">
+			<div class="col-3">
 				<div id="ht-3">
 					<img class="img-fluid" src="images/icon-3.png" width="170px" height="170px">
-					<p><strong style="color: black;">3. <br class="d-block d-sm-none"></strong>Schedule your install.</p>
+					<p><strong style="color: black;">3. </strong>Schedule your install.</p>
 				</div>
 			</div>
-			<div class="col-sm-3 col-xs-6">
+			<div class="col-3">
 				<div id="ht-4">
 					<img class="img-fluid" src="images/icon-4.png" width="170px" height="170px">
-					<p><strong style="color: black">4. <br class="d-block d-sm-none"></strong>Start saving on your electricity bill.</p>
+					<p><strong style="color: black">4. </strong>Start saving on your electricity bill.</p>
 				</div>
 			</div>
 			<div class="col-12">
 				<hr>
 			</div>
 			<div class="col-12" align="center">
-				<a href="contact.html#form">
+				<a href="contactUs.html#form">
 					<button class="button2 button1 btn btn-lg">Book your survey</button>
 				</a>
 			</div>
@@ -286,7 +286,7 @@
 				<hr id="f1" style="padding: 0;">
 			</div>
 			<div class="col-lg-4 col-md-12">
-				<h1 class="footer-heading" align="center" style="margin-bottom: 0;">YAAS Energy</h1>
+				<h1 align="center" style="margin-bottom: 0;">YAAS Energy</h1>
 				<p align="center" style="margin-top: 0;">Energy for future</p>
 			</div>
 			<div class="col-lg-4 col-md-12" style="padding: 0;">
@@ -297,11 +297,11 @@
 			<div class="col-lg-4 col-md-12">
 				<div align="center">
 					<br>
-					<h2>Phone</h2>
-					<a href="tel:+923000361029"><span class="material-icons">phone</span><span> +9230007121525</span></a>
+					<h2><span class="material-icons">phone</span> Phone</h2>
+					<a href="tel:+923000361029"><span>+9230007121525</span></a>
 					
-					<h2>Email</h2>
-					<a href="mailto:info@yaasgroup.com.pk" target="_blank"><span class="material-icons" style="size: 19px;">email</span><span> info@yaasgroup.com.pk</span></a>
+					<h2><span class="material-icons">email</span> Email</h2>
+					<a href="mailto:info@yaasgroup.com.pk" target="_blank"><span>info@yaasgroup.com.pk</span></a>
 				</div>
 			</div>
 			
@@ -322,8 +322,8 @@
 			<div class="col-lg-4 col-md-12">
 				<div align="center">
 					<br>
-					<h2>Address</h2>
-					<p><span class="material-icons" style="size: inherit;">place</span> D1-17M-MALIK Plaza, Civic Center, Model Town, Lahore.</p>
+					<h2><span class="material-icons">place</span> Address</h2>
+					<p>D1-17M-MALIK Plaza, Civic Center, Model Town, Lahore.</p>
 					<iframe  class="row" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13610.175821447743!2d74.311475!3d31.481729!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48759dd4fccee1f0!2sMalik%20Plaza%2017%20M!5e0!3m2!1sen!2s!4v1612638889585!5m2!1sen!2s" width="200" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 				</div>
 			</div>

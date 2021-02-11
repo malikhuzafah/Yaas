@@ -6,6 +6,7 @@ $(window).on("scroll", function() {
                   x[i].style.color = "#FFDB58";
             }
             document.getElementById('navbarDropdown').style.color = "#FFDB58";
+            document.getElementById('nav-active-span').style.color = "black";
             return;
       }
       if($(window).scrollTop() > 100) {
@@ -14,6 +15,7 @@ $(window).on("scroll", function() {
                   x[i].style.color = "#FFDB58";
             }
             document.getElementById('navbarDropdown').style.color = "#FFDB58";
+            document.getElementById('nav-active-span').style.color = "white";
             $('nav').addClass('black');
       }
       else {
@@ -22,6 +24,7 @@ $(window).on("scroll", function() {
                   x[i].style.color = "#125487";
             }
             document.getElementById('navbarDropdown').style.color = "#125487";
+            document.getElementById('nav-active-span').style.color = "black";
             $('nav').removeClass('black');
       }
 });
@@ -47,4 +50,31 @@ function todayDate(){
       var d = new Date();
       var n = d.getFullYear() + "  ";
       return document.getElementById("date").innerHTML = n;
+}
+
+function validate() {
+  var email = document.getElementById('email');
+  var flag = false;
+  var i = 0;
+  for (i = 0; i < email.length; i++) {
+    if (email[i] == '@') {
+      flag = true;
+      break;
+    }
+  }
+  if (flag) {
+    if (i >= email.length-1) {
+      document.getElementById('email-prompt').innerHTML = "Email must something after @";
+      return false;
+    }
+    else {
+      document.getElementById('email-prompt').innerHTML = "";
+      return true;
+    }
+  }
+  else {
+    document.getElementById('email-prompt').innerHTML = "Email must include @";
+    return false;
+  }
+  return true;
 }

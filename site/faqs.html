@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="images/logo-02.png">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<style type="text/css">
+		#form {
+			background-image: url('images/contact-us.jpg');
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			padding: 5% 10%;
+			margin: 0;
+		}
+		#form-container {
+			background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+			border-radius: 50px;
+			padding: 50px;
+			color: white;
+		}
+		.form-fields {
+			margin-bottom: 30px;
+		}
+		.form-input {
+			border-radius: 50px;
+		}
+		@media (min-width: 768px) and (max-width: 991px) {
+			#form {
+				padding: 5% 5%;
+			}
+			#form-container {
+				padding: 25px;
+				font-size: 0.8em;
+			}
+		}
+		@media (max-width: 767px) {
+			#form {
+				padding: 5% 5%;
+			}
+			#form-container {
+				padding: 25px;
+				font-size: 0.8em;
+			}
+		}
+	</style>
+	<title>Yaas Group of Engineers</title>
+</head>
+
+<body onload="todayDate();">
+	<form>
+		<div class="row" id="form">
+			<div class="col-12" id="form-container" style="">
+				<div class="row" style="margin: 0;">
+					<div class="col-12" align="center"><h1>Contact Us</h1></div>
+					<div class="form-fields col-md-6 col-sm-12" style="">
+						<label for="name">Name<span class="required">*</span></label>
+						<input type="text" name="name" class="form-input form-control" id="name" required="required">
+					</div>
+					<div class="form-fields col-md-6 col-sm-12">
+						<div>
+							<label for="email">Email<span class="required">*</span></label>
+							<input type="text" name="email" class="form-input form-control" id="email" required="required">
+						</div>
+					</div>
+					<div class="form-fields col-md-6 col-sm-12">
+						<div>
+							<label for="phone">Phone<span class="required">*</span></label>
+							<input type="text" name="phone" class="form-input form-control" id="phone" required="required">
+						</div>
+					</div>
+					<div class="form-fields col-md-6 col-sm-12">
+						<label>Which System are You interested in?</label>
+						<select class="custom-select form-input " name="type" id="type">
+							<option value="1">Residential</option>
+							<option value="2">Commercial</option>
+							<option value="3">Industrial</option>
+							<option value="4">Agricultural</option>
+							<option value="5">Others</option>
+						</select>
+					</div>
+				
+					<div class="form-fields col-12">
+						<label for="discription">Describe your query</label>
+						<textarea class="form-input form-control" name="discription" id="discription"></textarea>
+					</div>
+					<div align="center" class="col-12"><input type="submit" value="Submit" class="button1 btn btn-lg"></div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

@@ -73,12 +73,12 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto" id="navbar-buttons">
 
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html" onclick="topFunction();"><span class="nav-link-span">Home </span></a>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"><span class="nav-link-span">Home </span></a>
 						</li>
 
-						<li class="nav-item">
-							<a class="nav-link" href="#"><span class="nav-link-span">About </span></a>
+						<li class="nav-item active">
+							<a class="nav-link" href="#" onclick="topFunction();"><span class="nav-link-span" id="nav-active-span">About </span></a>
 						</li>
 
 						<li class="nav-item dropdown">
@@ -89,7 +89,7 @@
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="residential.html">Residential Projects</a>
 								<a class="dropdown-item" href="commercial.html">Commercial Projects</a>
-								<a class="dropdown-item" href="indutrial.html">Industrial Projects</a>
+								<a class="dropdown-item" href="industrial.html">Industrial Projects</a>
 								<a class="dropdown-item" href="agricultural.html">Agricultural Projects</a>
 							</div>
 						</li>
@@ -114,10 +114,10 @@
 			</nav>
 		</header>
 
-		<div style="">
-			<div style="height: 70vh;position: relative;">
-				<div style="background-image: url('images/slide-2.jpg'); background-size: cover;background-position: center; height: 100%; width: 100%;position: relative;"></div>
-				<h1 align="center" style="position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);">About Us</h1>
+		<div>
+			<div id="other-header">
+				<div id="about-header" class="header-image"></div>
+				<h1 align="center">About Us</h1>
 			</div>
 		</div>
 	</div>
@@ -131,9 +131,9 @@
 				 #7c7c7c
 			</div> -->
 			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="background-color: rgba(124,124,124,0.5);"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1" style="background-color: rgba(124,124,124,0.5);"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2" style="background-color: rgba(124,124,124,0.5);"></li>
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
@@ -176,7 +176,8 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-
+		<br>
+		<br>
 		<!-- <div>
 			<div class="container" align="center" style="margin: auto;">
 				<h3 onclick="divVisibility('about-us');" align="left">About us</h3>
@@ -264,7 +265,7 @@
 				<hr id="f1" style="padding: 0;">
 			</div>
 			<div class="col-lg-4 col-md-12">
-				<h1 align="center" style="margin-bottom: 0;">YAAS Energy</h1>
+				<h1 class="footer-heading" align="center" style="margin-bottom: 0;">YAAS Energy</h1>
 				<p align="center" style="margin-top: 0;">Energy for future</p>
 			</div>
 			<div class="col-lg-4 col-md-12" style="padding: 0;">
@@ -275,11 +276,11 @@
 			<div class="col-lg-4 col-md-12">
 				<div align="center">
 					<br>
-					<h2><span class="material-icons">phone</span> Phone</h2>
-					<a href="tel:+923000361029"><span>+9230007121525</span></a>
+					<h2>Phone</h2>
+					<a href="tel:+923000361029"><span class="material-icons">phone</span><span> +9230007121525</span></a>
 					
-					<h2><span class="material-icons">email</span> Email</h2>
-					<a href="mailto:info@yaasgroup.com.pk" target="_blank"><span>info@yaasgroup.com.pk</span></a>
+					<h2>Email</h2>
+					<a href="mailto:info@yaasgroup.com.pk" target="_blank"><span class="material-icons" style="size: 19px;">email</span><span> info@yaasgroup.com.pk</span></a>
 				</div>
 			</div>
 			
@@ -300,8 +301,8 @@
 			<div class="col-lg-4 col-md-12">
 				<div align="center">
 					<br>
-					<h2><span class="material-icons">place</span> Address</h2>
-					<p>D1-17M-MALIK Plaza, Civic Center, Model Town, Lahore.</p>
+					<h2>Address</h2>
+					<p><span class="material-icons" style="size: inherit;">place</span> D1-17M-MALIK Plaza, Civic Center, Model Town, Lahore.</p>
 					<iframe  class="row" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13610.175821447743!2d74.311475!3d31.481729!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48759dd4fccee1f0!2sMalik%20Plaza%2017%20M!5e0!3m2!1sen!2s!4v1612638889585!5m2!1sen!2s" width="200" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 				</div>
 			</div>

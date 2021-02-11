@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="images/logo-02.png">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<title>Yaas Group of Engineers</title>
+</head>
+
+<body onload="todayDate();">
+	
+	<div >
+		<a href="https://wa.me/923066882888" target="_blank" id="whatsapp">
+			<div class="overlay-image" id="whatsapp-icon"></div>
+		</a>
+	</div>
+
+	<button onclick="topFunction()" id="scroll-up-btn" title="Go to top">
+		<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+			<path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+		</svg>
+	</button>
+
+
+	<div id="head">
+		<header class="header">
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" id="navbar">
+
+				<a href="index.html" class="pull-left">
+					<div id="logo-img" class="pull-left"></div>
+				</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					<span></span>
+					<span></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto" id="navbar-buttons">
+
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"><span class="nav-link-span">Home </span></a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="about.html"><span class="nav-link-span">About </span></a>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="nav-link-span">Projects</span>
+							</a>
+
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="residential.html">Residential Projects</a>
+								<a class="dropdown-item" href="commercial.html">Commercial Projects</a>
+								<a class="dropdown-item" href="industrial.html">Industrial Projects</a>
+								<a class="dropdown-item" href="agricultural.html">Agricultural Projects</a>
+							</div>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href=faqs.html><span class="nav-link-span">FAQ's </span></a>
+						</li>
+
+						<li class="nav-item active">
+							<a class="nav-link" href="#" onclick="topFunction();"><span class="nav-link-span" id="nav-active-span">Career </span></a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="partners.html"><span class="nav-link-span">Partners </span></a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html"><span class="nav-link-span">Contact Us </span></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div>
+			<div id="other-header">
+				<div class="header-image" id="career-header"></div>
+				<h1 align="center">Career</h1>
+			</div>
+		</div>
+	</div>
+	
+	<div id="main-container">
+
+	</div>
+
+	<footer>
+		<div class="footer row">
+			<div class="col-lg-4 col-md-12" style="padding: 0;">
+				<hr id="f1" style="padding: 0;">
+			</div>
+			<div class="col-lg-4 col-md-12">
+				<h1 class="footer-heading" align="center" style="margin-bottom: 0;">YAAS Energy</h1>
+				<p align="center" style="margin-top: 0;">Energy for future</p>
+			</div>
+			<div class="col-lg-4 col-md-12" style="padding: 0;">
+				<hr id="f2" style="padding: 0;">
+			</div>
+		</div>
+		<div class="footer row">
+			<div class="col-lg-4 col-md-12">
+				<div align="center">
+					<br>
+					<h2>Phone</h2>
+					<a href="tel:+923000361029"><span class="material-icons">phone</span><span> +9230007121525</span></a>
+					
+					<h2>Email</h2>
+					<a href="mailto:info@yaasgroup.com.pk" target="_blank"><span class="material-icons" style="size: 19px;">email</span><span> info@yaasgroup.com.pk</span></a>
+				</div>
+			</div>
+			
+		
+			<div class="col-lg-4 col-md-12">
+				<div align="center">
+					<br>
+					<h2 style="margin-bottom: -30px; margin-top: auto; padding-top: auto;">Find us on</h2>
+					<ul class="social-networks spin-icon">
+						<li><a href="https://www.facebook.com/yaas.goe/" class="icon-facebook" target="_blank">Facebook</a></li>
+						<li><a href="https://www.instagram.com/yaas.goe/" class="icon-instagram" target="_blank">Instagram</a></li>
+						<li><a href="https://www.linkedin.com/" class="icon-linkedin">LinkedIn</a></li>
+					</ul>
+					<div class="vl d-none d-lg-block d-xl-block"></div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-12">
+				<div align="center">
+					<br>
+					<h2>Address</h2>
+					<p><span class="material-icons" style="size: inherit;">place</span> D1-17M-MALIK Plaza, Civic Center, Model Town, Lahore.</p>
+					<iframe  class="row" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13610.175821447743!2d74.311475!3d31.481729!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48759dd4fccee1f0!2sMalik%20Plaza%2017%20M!5e0!3m2!1sen!2s!4v1612638889585!5m2!1sen!2s" width="200" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+			</div>
+			
+			<hr style="width: 100%; margin-top: 100px;">
+			<div class="col-12" style="text-align: center;" id="copyright"><p>&copy; <em id="date"></em>YAAS Energy. All rights reserved</p></div>
+		</div>
+	</footer>
+</body>
+</html>
