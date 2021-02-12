@@ -6,6 +6,7 @@ body {
   font-family: 'Cambria', sans-sarif;
   margin: 0;
   padding: 0;
+  background-color: #fcfcfc;
 }
 html {
   scroll-behavior: smooth;
@@ -206,7 +207,7 @@ nav {
   vertical-align: center;
 }
 
-#our-vision h1, #about-us h1, #how-it-works h1, #why-us h1, #projects h1 {
+#our-vision h1, #about-us h1, #how-it-works h1, #why-us h1, #projects h1, #our-team h1 {
   color: #125487;
 }
 
@@ -234,6 +235,7 @@ nav {
   border-radius: 40px;
   background-color: transparent;
   color: white;
+  transition: 0.9s;
   border: 1px solid white;
 }
 .button1:hover {
@@ -244,11 +246,12 @@ nav {
 }
 
 .button2 {
-  color: #125487;;
-  border-color: #125487;;
+  color: #125487;
+  transition: 0.9s;
+  border-color: #125487;
 }
 .button2:hover {
-  background-color: #125487;;
+  background-color: #125487;
   color: white;
   border-color: #125487;
   transition: 0.9s;
@@ -483,12 +486,11 @@ footer {
   color: black;
 }
 
-#our-team {
+/*#our-team {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
-  margin: 0;
 }
 #team-1-tile {
   background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../images/team-abdullah.jpg');
@@ -503,8 +505,8 @@ footer {
   background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../images/team-yousaf.jpg');
 }
 #team-1-tile, #team-2-tile, #team-3-tile, #team-4-tile {
-  height: 500px;
-  width: 100%;
+  height: 300px;
+  width: 300px;
   position: relative;
   overflow: hidden;
   background-position: center;
@@ -513,23 +515,35 @@ footer {
   background-attachment: local;
 }
 #team-1-tile:hover, #team-2-tile:hover, #team-3-tile:hover, #team-4-tile:hover {
-  /*box-shadow: 0 1px 5px 1px black;*/
-}
+  box-shadow: 0 1px 5px 1px black;
+}*/
 
-#team-1-tile div, #team-2-tile div, #team-3-tile div, #team-4-tile div {
+/*#team-1-tile div, #team-2-tile div, #team-3-tile div, #team-4-tile div {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 100%;
-  /*text-align: center;*/
-  /*font-size: 1.6em;*/
+  text-align: center;
+  font-size: 1.6em;
   height: 150px;
   text-transform: uppercase;
   background-color: #000;
   background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
   color: #fff;
   padding: 10px;
-  /*opacity: .8;*/
+  opacity: .8;
+}*/
+.team-img {
+  -webkit-box-shadow: 0px 2px 3px 3px rgba(0,0,0,0.07);
+  -moz-box-shadow: 0px 2px 3px 3px rgba(0,0,0,0.07);
+  box-shadow: 0px 2px 3px 3px rgba(0,0,0,0.07);
+  /*background-color: black;*/
+  transition: 0.9s;
+}
+.team-img:hover {
+  opacity: 100%;
+  opacity: .8;
+  transition: 0.9s;
 }
 
 /*contact Page*/
