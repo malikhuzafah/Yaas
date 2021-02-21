@@ -6,7 +6,7 @@ $(window).on("scroll", function() {
                   x[i].style.color = "#FFDB58";
             }
             document.getElementById('navbarDropdown').style.color = "#FFDB58";
-            document.getElementById('nav-active-span').style.color = "black";
+            document.getElementById('nav-active-span').style.color = "white";
             return;
       }
       if($(window).scrollTop() > 100) {
